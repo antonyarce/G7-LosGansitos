@@ -12,60 +12,53 @@ include("head.php")
     </header>
     <!--Principal-->
     <main>
-        <section>
-            <div class="container-sm">
-                <h1> Nuevo Evento</h1>
+        <div class="container">
 
-                <form id="eventoForm" class="row g-3">
-                    <div class="col-12">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre">
-                    </div>
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>¡Hacemos que tus eventos sean inolvidables!</h1>
+                <p>En <strong>Los Gansitos</strong>, convertimos tus ideas en momentos memorables.</p>
+                <a href="#contacto" class="btn">Contáctanos</a>
+            </section>
 
-                    <div class="col-12">
-                        <label for="descripcion" class="form-label">Descripcion</label>
-                        <input type="text" class="form-control" id="descripcion">
-                    </div>
+            <!-- Sobre Nosotros -->
+            <section id="sobre-nosotros" class="section">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    Somos una empresa dedicada a la organización de eventos únicos y personalizados.
+                    Con años de experiencia, nos especializamos en crear momentos especiales que
+                    queden en la memoria de nuestros clientes.
+                </p>
+                <img src="images/boda3.jpg" alt="Evento organizado por Los Gansitos">
+            </section>
 
-                    <div class="col-md-6">
-                        <label for="fecha" class="form-label">Fecha</label>
-                        <input type="date" id="fecha" name="fecha">
-                    </div>
+            <!-- Testimonios -->
+            <section id="testimonios" class="section">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial">
+                    <p>"Contratar a Los Gansitos fue la mejor decisión para nuestra boda. Todo salió perfecto y tal como
+                        lo soñamos."</p>
+                    <span>- Ana G.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelente servicio y atención al detalle. Sin duda, los recomendaré a mis amigos."</p>
+                    <span>- Carlos M.</span>
+                </div>
+            </section>
 
-                    <div class="col-md-6">
-                        <label for="invitados" class="form-label">Numero de invitados</label>
-                        <input type="int" class="form-control" id="invitados">
-                    </div>
-
-                    <div class="col-md-4">
-                        <label for="provincia" class="form-label">Provincia</label>
-                        <select type="text" id="provincia" class="form-select">
-                            <option selected>San José</option>
-                            <option>Cartago</option>
-                            <option>Heredia</option>
-                            <option>Alajuela</option>
-                            <option>Limón</option>
-                            <option>Puntarenas</option>
-                            <option>Guanacaste</option>
-                        </select>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="direccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="direccion" placeholder="1234 Barrio A">
-                    </div>
-
-                    <div class="col-12">
-                        <label for="formFile" class="form-label">Subir imagen</label>
-                        <input class="form-control" type="file" id="formFile">
-                    </div>
-
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Crear evento</button>
-                    </div>
+            <!-- Contacto -->
+            <section id="contacto" class="section">
+                <h2>Contacto</h2>
+                <form action="contacto.php" method="POST" class="contact-form">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
                 </form>
-            </div>
-        </section>
+            </section>
+
+        </div>
+
     </main>
 
     <?php include("footer.php") ?>

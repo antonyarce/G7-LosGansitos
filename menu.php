@@ -4,13 +4,27 @@ session_start();
 if(!empty($_SESSION)){
    if($_SESSION["rol"] == "admin"){
     $menu = [
-        ["label" => "Reservaciones", "url" => "index.php"],
+        ["label" => "Inicio", "url" => "index.php"],
+        ["label" => "Crear Evento", "url" => "agregar_evento.php"],
+        ["url" => "misEventos.php", "label" => "Mis Eventos"],
+        ["url" => "eventos.php", "label" => "Eventos"],
+        ["url" => "servicios.php", "label" => "Servicios"],
+        ["url" => "agregar_servicio.php", "label" => "Nuevo Servicio"],
+        ["url" => "evento_servicio.php", "label" => "Servicios añadidos"],
         ["url" => "logout.php", "label" => "Salir"]
     ];
-   } 
+   } else {
+    $menu = [
+        ["label" => "Inicio", "url" => "index.php"],
+        ["label" => "Crear Evento", "url" => "agregar_evento.php"],
+        ["url" => "misEventos.php", "label" => "Mis Eventos"],
+        ["url" => "eventos.php", "label" => "Eventos"],
+        ["url" => "servicios.php", "label" => "Servicios"],
+        ["url" => "logout.php", "label" => "Salir"]
+    ];
+   }
 } else {
     $menu = [
-        ["label" => "Reservaciones", "url" => "index.php"],
         ["label" => "Login", "url" => " login.php"],
     ];
     

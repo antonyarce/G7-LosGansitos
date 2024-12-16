@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #007BFF;
+    background: #5900ff;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,7 +31,7 @@ header p {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #5900ff;
     border-radius: 5px;
 }
 
@@ -48,7 +48,7 @@ header p {
 }
 
 .menu-item a:hover {
-    background-color: #0056b3;
+    background-color: #2100b3;
     color: #f4f4f4;
 }
 
@@ -62,7 +62,7 @@ main {
 }
 
 h2 {
-    color: #007BFF;
+    color: #5900ff;
     margin-bottom: 10px;
 }
 
@@ -92,7 +92,7 @@ table td {
 }
 
 table th {
-    background-color: #007BFF;
+    background-color: #5900ff;
     color: white;
 }
 
@@ -154,7 +154,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #007BFF;
+    border-color: #5900ff;
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
 }
 
@@ -166,7 +166,7 @@ button {
     width: 100%;
     margin: 12px;
     padding: 12px;
-    background-color: #007BFF;
+    background-color: #5900ff;
     color: #ffffff;
     border: none;
     border-radius: 6px;
